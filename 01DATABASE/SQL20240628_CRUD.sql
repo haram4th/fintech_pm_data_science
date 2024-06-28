@@ -1,3 +1,6 @@
+
+# github 연습
+
 # CRUD 연습
 use mywork;
 create table emp_test
