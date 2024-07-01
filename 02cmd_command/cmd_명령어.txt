@@ -1,0 +1,57 @@
+GUI 윈도우 단축키
+
+윈도우 + E: 윈도우 탐색기 켜기
+윈도우 + R: 실행창 켜기
+F2 파일명 바꾸기
+Alt + F4 활성창 / 프로그램 닫기
+
+윈도우 사용자 추가하기 - 로컬 관리자 계정으로 
+
+윈도우 + pause/break: 시스템 정보
+Ctrl + Shift + ESC: 작업관리자
+윈도우 + S: 검색창에서 프로그램 빠르게 실행하기
+윈도우 + A: 알림센터 설정
+윈도우 + Ctrl + D: 가상 데스크톱 추가
+윈도우 + Ctrl + 방향키: 가상 데스크톱 전환
+윈도우 + I: 설정 화면 호출
+윈도우 + X: 모바일 센터 호출
+윈도우 + 방향키: 화면 분할
+윈도우 + D: 바탕화면 바로가기
+
+-----------------------------------------------------------------------------------------
+
+CMD 명령어
+
+1. 현재 경로의 파일과 폴더 목록보기 dir,  dir/w, dir/w/a
+2. 윗 방향키: 이전 명령어 
+3. tab: 파일/디렉토리명 자동완성
+4. 디렉토리 만들기 mkdir 디렉토리명(폴더명)
+5. 파일 만들기 copy con 파일명 -> 파일내용 쓰기 -> Ctrl + C 
+   copy con test.txt 엔터
+   test file입니다. 엔터
+   ctrl + c
+
+6. 디렉토리 변경 cd
+  - 절대경로 vs 상대경로
+  - c:\Users\5-29\testdir\testdir2\test.txt
+  - c:\Users\5-29\testdir\testdir2> ./test.txt
+
+
+7. 화면지우기 cls
+8. copy <파일명> <복사할 폴더명>: 파일 복사하기
+9. copy <파일명> <변경할 파일명>: 같은 폴더에 이름 바꿔 복사하기
+10. del 파일명: 파일 지우기
+11. rmdir 디렉토리명: 디렉토리 지우기  rmdir /s
+10. 네트워크 정보 및 IP보기 ipconfig /all
+
+c:\fintech_service 안에 02cmd_command 디렉토리를 만드세요.
+02cmd_command로 들어가서 testdir을 만드세요.
+testdir에 들어가서 testdir2를 만드세요.
+testdir2에 test.txt, test2.txt, test3.txt 파일을 만드세요.
+test.txt 파일을 절대경로를 이용해서 02cmd_command로 복사하세요.
+test.txt 파일 상대경로를 이용해서 testdir에 이동하세요.
+testdir2에 있는 test.txt, test2.txt파일을 삭제하세요.
+testdir2에 있는 test3.txt파일을 testdir로 옮기고 testdir2 디렉토리를 삭제하세요.
+testdir에 있는 파일을 02cmd_command로 복사하고 testdir을 삭제하세요.
+
+
