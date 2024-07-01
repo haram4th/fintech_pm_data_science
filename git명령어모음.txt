@@ -1,0 +1,32 @@
+저장소 초기화 하기
+git init -b main
+
+저장소 상태보기
+git status
+
+git remote하기: git remote add origin <레파지토리 주소>
+
+원격 저장소 목록: git remote -v
+
+git push
+
+강제 푸쉬 git push --force
+
+git push시 upstream 오류 발생 경우
+git push -u origin main
+
+브렌치 확인
+git branch -v
+
+새로운 브랜치 생성
+git branch -f <브렌치 이름> [커밋 체크섬]
+
+git merge <대상 브랜치>
+
+git config --global user.name <github 닉네임>
+
+git config --global user.email <github 이메일>
+
+과거 커밋으로 되돌리기(작업폴더 내용도 함께 변경)
+git reset --hard <커밋아이디7 자리>
+git reset --hard HEAD~<숫자>
