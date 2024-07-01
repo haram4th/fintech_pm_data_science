@@ -1,0 +1,13 @@
+alt + L + O 라이브 서버
+w3schools.com
+ctrl + k + f 코드 자동정렬
+ctrl + / 주석
+
+auto rename tag
+code runner
+css navigation
+html css support
+html tag wrapper
+live server
+prettier - code formatter
+vscode-icons
