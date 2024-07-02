@@ -4,6 +4,7 @@
 <head> <!-- head와 body는 형제 관계 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>fintech_service</title>
 </head>
 
@@ -21,6 +22,8 @@
     <h6>h6 태그 입니다.</h6>
 
     <!-- p 태그 문단 본문 작성시 사용 -->
+    <p>p 태그 입니다. 문단을 작성할 때 사용합니다</p> <!-- 블록 태그 -->
+    <p>p 태그2 입니다.<br> 문단을 작성할 때<br> 사용합니다</p>
     <a href="http://www.naver.com">네이버</a> <!-- 인라인 태그 -->
     <a href="http://www.naver.com">네이버</a>
     <a href="http://www.naver.com">네이버</a>
@@ -36,8 +39,7 @@
     <a href="http://www.naver.com">네이버</a>
     <a href="http://www.naver.com">네이버</a>
     <a href="http://www.naver.com">네이버</a>
-    <p>p 태그 입니다. 문단을 작성할 때 사용합니다</p> <!-- 블록 태그 -->
-    <p>p 태그2 입니다.<br> 문단을 작성할 때<br> 사용합니다</p>
+    
     <!-- <br> -->
 
 
@@ -105,7 +107,7 @@
     <a href="http://www.naver.com" target="_blank" title="네이버로 가는 링크">네이버 바로가기</a>
     <br>
     <!-- 이미지 넣기 img -->
-    <img src="..\다운로드.jfif" alt="고양이 사진"><br>
+    <img src="../다운로드.jfif" alt="고양이사진"><br>
     <img src="images\다운로드.jfif" alt="사진이 없거나 사진에 대한 설명이 필요할 때 작성">
     <br>
     <a href="http://www.naver.com" target="_blank" title="고양이를 누르면 네이버로 가는 링크">
@@ -113,9 +115,14 @@
     </a>
     <br>
     <a href="http://www.naver.com" target="_blank" title="고양이를 누르면 네이버로 가는 링크">
-        <img src="C:/fintech_service/html_css/cat.jfif" alt="사진이 없거나 사진에 대한 설명이 필요할 때 작성">
+<<<<<<< HEAD
+        <img src="C:\\fintech_service\\03html_css_javascript\\html\\images\\cat.jfif" alt="사진이 없거나 사진에 대한 설명이 필요할 때 작성">
+=======
+        <img src="D://bigdata//fintech_service//03html_css_javascript//html//images//cat.jfif" alt="사진이 없거나 사진에 대한 설명이 필요할 때 작성">
+        <p>이미지 경로를 절대경로로 했을 경우 웹브라우저가 보안상의 이유로 로컬 파일 시스템 직접 접근을 차단해 이미지가 보이지 않음</p>
+>>>>>>> a26a35944cef7c000a5c5c05c5a3b32c2e81b55e
     </a>
-
+    <br>
     <!-- 텍스트 강조 태그 strong, em(empasis)-->
     <strong>중요한 의미가 있는 텍스트</strong>
     <p>이 시설은 <strong>관계자 외 <strong>출입금지</strong></strong> 입니다.</p>
@@ -129,6 +136,10 @@
     <!-- input type="데이터 종류", name="이름" => 변수명, value="초깃값", 
        placeholder= "기본적으로 표시되는 값"-->
     <p>텍스트 <input type="text" placeholder="text"></p>
+    <label for="userid">id
+        <input type="text" id="userid">
+    </label>
+
     <p>패스워드: <input type="password" placeholder="비밀번호를 입력하세요"></p>
     <p>tel: <input type="tel" placeholder="000-0000-0000"></p>
     <p>number: <input type="number" placeholder="숫자만 입력"></p>
@@ -239,6 +250,264 @@
 
 <!-- maxlength="숫자" input태그에서 입력받는 길이 제한-->
  <p>글자입력: <input type="text" maxlength="4"></p>
+
+<!-- ckeck box에서 checked 로 기본값 지정하기 -->
+<br>
+<fieldset>
+    <legend>좋아하는 과일</legend>
+    <input type="checkbox" id="banana" name="banana" value="banana">
+    <label for="banana">banana</label><br>
+    <input type="checkbox" id="apple" name="apple" value="apple">
+    <label for="apple">apple</label><br>
+    <input type="checkbox" id="orange" name="orange" value="orange">
+    <label for="orange">orange</label><br>
+</fieldset>
+
+<fieldset>
+    <legend>좋아하는 과일</legend>
+    <input type="checkbox" id="banana" name="banana" value="banana">
+    <label for="banana">banana</label><br>
+    <input type="checkbox" id="apple" name="apple" value="apple" checked>
+    <label for="apple">apple</label><br>
+    <input type="checkbox" id="orange" name="orange" value="orange">
+    <label for="orange">orange</label><br>
+</fieldset>
+<br>
+<br>
+<!-- 표 만들기 table  행<tr> 열<td> -->
+
+    <table border="1px">
+        <tr>
+            <td>1행, 1열</td>
+            <td>1행, 2열</td>
+        </tr>
+        <tr>
+            <td>2행, 1열</td>
+            <td>2행, 2열</td>
+        </tr>
+        <tr>
+            <td>3행, 1열</td>
+            <td>3행, 2열</td>
+        </tr>
+    </table>
+
+<br>
+<br>
+<table border="1px">
+    <caption>표 제목</caption>
+    <tr>
+        <td>1행, 1열</td>
+        <td>1행, 2열</td>
+    </tr>
+    <tr>
+        <td>2행, 1열</td>
+        <td>2행, 2열</td>
+    </tr>
+    <tr>
+        <td>3행, 1열</td>
+        <td>3행, 2열</td>
+    </tr>
+</table>
+
+<br>
+<br>
+<table border="1px">
+    <caption>출석부</caption>
+    <tr>
+        <th>이름</th>  <!-- th 열에서 제목을 만드는 태그 -->
+        <th>번호</th>
+    </tr>
+    <tr>
+        <td>홍길동</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>둘리</td>
+        <td>2</td>
+    </tr>
+</table>
+
+<br>
+<br>
+<table border="1px">
+    <caption>가격표</caption>
+    <tr>
+        <th>번호</th>  <!-- th 열에서 제목을 만드는 태그 -->
+        <th>상품명</th>
+        <th>수량</th>
+        <th>가격</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>콜라</td>
+        <td>1개</td>
+        <td>1,500원</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>사이다</td>
+        <td>2개</td>
+        <td>1,000원</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>탄산수</td>
+        <td>3개</td>
+        <td>1,000원</td>
+    </tr>
+</table>
+
+<!-- 테이블의 셀 병합하기 rowspan(행을 합침, 위아래를 하나로), 
+ colspan(열을 합침, 좌우를 합침)  -->
+ <br>
+ <br>
+ <table border="1px">
+     <caption>가격표</caption>
+     <tr>
+         <th>번호</th>  <!-- th 열에서 제목을 만드는 태그 -->
+         <th>상품명</th>
+         <th>수량</th>
+         <th>가격</th>
+     </tr>
+     <tr>
+         <td>1</td>
+         <td>콜라</td>
+         <td>1개</td>
+         <td>1,500원</td>
+     </tr>
+     <tr>
+         <td>2</td>
+         <td>사이다</td>
+         <td>2개</td>
+         <td rowspan="2">1,000원</td> 
+     </tr>
+     <tr>
+         <td>3</td>
+         <td>탄산수</td>
+         <td>3개</td>
+         <!-- <td>1,000원</td> -->
+     </tr>
+     <tr>
+        <td>총금액</td>
+        <td colspan="3">6,500원</td>
+     </tr>      
+ </table>
+
+ <!-- thead, tfoot, tbody 시맨틱 태그 -->
+ <br>
+ <br>
+ <table border="1px">
+     <caption>가격표 thead, tbody, tfoot 적용</caption>
+     <thead>
+        <tr>
+            <th>번호</th>  <!-- th 열에서 제목을 만드는 태그 -->
+            <th>상품명</th>
+            <th>수량</th>
+            <th>가격</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>콜라</td>
+            <td>1개</td>
+            <td>1,500원</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>사이다</td>
+            <td>2개</td>
+            <td rowspan="2">1,000원</td> 
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>탄산수</td>
+            <td>3개</td>
+            <!-- <td>1,000원</td> -->
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>총금액</td>
+            <td colspan="3">6,500원</td>
+        </tr>
+    </tfoot>       
+ </table>
+
+<!-- col과 colgroup 열 전체를 그룹화해서 통일된 스타일을 적용하는 목적-->
+<br>
+ <br>
+ <table border="1px">
+     <caption>가격표 colgroup</caption>
+     <thead>
+        <col style="width:80px">
+        <colgroup span="2" style="width:150px"></colgroup>
+        <col style="width:100px">
+        <tr>
+            <th>번호</th>  <!-- th 열에서 제목을 만드는 태그 -->
+            <th>상품명</th>
+            <th>수량</th>
+            <th>가격</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>콜라</td>
+            <td>1개</td>
+            <td>1,500원</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>사이다</td>
+            <td>2개</td>
+            <td rowspan="2">1,000원</td> 
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>탄산수</td>
+            <td>3개</td>
+            <!-- <td>1,000원</td> -->
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>총금액</td>
+            <td colspan="3">6,500원</td>
+        </tr>
+    </tfoot>       
+ </table>
+
+<!-- 태그 종류에 상관없이 사용하는 글로벌 속성 -->
+<!-- class 묶음 -->
+<!-- id 유일한 값 -->
+<!-- style 해당 태그에만 css 스타일을 적용, 우선순위가 가장 높음 -->
+<!-- hidden 해당 요소를 화면에서 감춤 -->
+ 
+<p class="title" id="bookname">책제목</p>
+<p class="title" id="bookname2">제목1</p>
+<p class="odd" style="color:aqua; text-align:center;">내용1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, eveniet excepturi. Repudiandae ab beatae nobis placeat, perspiciatis officiis doloremque delectus mollitia numquam eius doloribus adipisci et praesentium alias officia fugit.</p>
+<p class="title" >제목2</p>
+<p class="even" hidden>내용2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus modi esse explicabo officia sed ipsa, aspernatur incidunt possimus! Saepe quo, consequuntur similique quos sequi illo adipisci nemo laborum ratione nisi!</p>
+<p class="title">제목3</p>
+<p class="odd">내용3 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, eveniet excepturi. Repudiandae ab beatae nobis placeat, perspiciatis officiis doloremque delectus mollitia numquam eius doloribus adipisci et praesentium alias officia fugit.</p>
+<p class="title">제목4</p>
+<p class="even">내용4 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus modi esse explicabo officia sed ipsa, aspernatur incidunt possimus! Saepe quo, consequuntur similique quos sequi illo adipisci nemo laborum ratione nisi!</p>
+<p class="title">제목5</p>
+<p class="odd">내용5 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, eveniet excepturi. Repudiandae ab beatae nobis placeat, perspiciatis officiis doloremque delectus mollitia numquam eius doloribus adipisci et praesentium alias officia fugit.</p>
+<p class="title">제목6</p>
+<p class="even">내용6 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus modi esse explicabo officia sed ipsa, aspernatur incidunt possimus! Saepe quo, consequuntur similique quos sequi illo adipisci nemo laborum ratione nisi!</p>
+<p class="title">제목7</p>
+<p class="odd">내용7 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, eveniet excepturi. Repudiandae ab beatae nobis placeat, perspiciatis officiis doloremque delectus mollitia numquam eius doloribus adipisci et praesentium alias officia fugit.</p>
+<p class="title">제목8</p>
+<p class="even">내용8 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus modi esse explicabo officia sed ipsa, aspernatur incidunt possimus! Saepe quo, consequuntur similique quos sequi illo adipisci nemo laborum ratione nisi!</p>
+
+
+
+
+
+
+
 
     <br>
     <br>

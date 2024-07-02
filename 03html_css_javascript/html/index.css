@@ -1,0 +1,43 @@
+#bookname {
+    text-shadow: 2px;
+    font-size: xx-large;
+}
+
+.title {
+    color:blue;
+    text-align:center;
+}
+
+.odd {
+    color: orange;
+    text-align: left;
+}
+
+.even {
+    color:brown;
+    text-align: right;
+}
+
+.test1 {
+    background-color: yellow;
+    text-align: center;
+    width: 350px;
+    border: solid 1px black;
+    transform: rotate(15deg); /* 15도 회전 */
+    }
+
+.login_window {
+    text-align: center;
+}
+
+/* css는 선택자{      선택자는 태그명, class명, id명
+   스타일 속성1: 값;
+   스타일 속성2: 값;
+   스타일 속성3: 값;
+   } */
+
+p {
+    color: red;
+    text-align: left;
+    font-size: 12px;
+}
