@@ -73,6 +73,9 @@
     <p>paragraph 2</p>
     <span>
         <p>paragraph 3</p>
+        <span>
+            <p>paragraph 4</p>
+        </span>
     </span>
 </div>
 <p>paragraph 4</p>
@@ -169,9 +172,78 @@
     </p>
     <div>
         <p>이것은 div의 첫번째 자식 문단 입니다.</p>
+            <div>
+                <p>이것은 div의 첫번째 자식 문단 입니다.</p>
+                <p>이것은 div의 두번째 자식 문단 입니다.</p>
+            </div>
         <p>이것은 div의 두번째 자식 문단 입니다.</p>
+
     </div>
+    <p>이 문단은 부모(div.structural)의 마지막 자식입니다.
 </div>
+
+<div class="nth_child">
+    <h1>nth_child 연습</h1>
+    <ol>
+        <li>espresso</li>
+        <li>americano</li>
+        <li>caffe latte</li>
+        <li>caffe mocha</li>
+        <li>caramel latte</li>
+        <li>cappuccino</li>
+    </ol>
+    <ul>
+        <li>espresso</li>
+        <li>americano</li>
+        <li>caffe latte</li>
+        <li>caffe mocha</li>
+        <li>caramel latte</li>
+        <li>cappuccino</li>
+    </ul>
+</div>
+
+<div class="of_type">
+    <h1>first-of-type, last-of-type, <br>nth-of-type 연습</h1>
+    <h1>this is a heading</h1>
+    <p>the first paragraph</p>
+    <p>the second paragraph</p>
+    <p>the third paragraph</p>
+    <p>the fourth paragraph</p>
+    <div>
+        <h1>this is a heading2</h1>
+        <p>the first paragraph2</p>
+        <p>the second paragraph2</p>
+        <p>the third paragraph2</p>
+        <p>the fourth paragraph2</p>
+    </div>
+
+</div>
+
+<div class="validity">
+    <h1>정합성 체크 셀렉터 연습</h1>
+    <label>입력값이 반드시 필요
+        <input type="text" required>
+    </label>
+    <br>
+    <label>특수문자를 포함하지 않는 4자리 문자 또는 숫자
+        <input type="text" value="ab1!"
+            pattern="[a-zA-Z0-9]{4}" required>
+    </label>
+    <br>
+    <label>핸드폰 번호 형식
+        <input type="text" value="010-1111-2222"
+            pattern="^\d{3}-\d{3,4}-\d{4}$" required>
+    </label>
+
+</div>
+
+<div class="pseudo_ele">
+    <h1>가상 요소 셀렉터 연습</h1>
+    <h2>this is a heading</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit unde, sapiente deleniti temporibus tenetur quod obcaecati hic, commodi fugit ex tempora mollitia maiores odit libero nihil! Reprehenderit illo libero quod!</p>
+</div>
+
+
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

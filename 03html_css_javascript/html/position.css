@@ -1,0 +1,109 @@
+.box {
+    width: 100px;
+    height:100px;
+    text-align: center;
+    line-height: 100px;
+    color:white;
+}
+
+.red-box{
+    background-color: red;
+}
+
+.green-box {
+    background-color: green;
+}
+
+.blue-box {
+    background-color: blue;
+}
+
+/* position은 요소를 임의로 배치하는 위치 속성 */
+/* 
+static 기본 흐름 만들어진 순서
+relative 요소의 기본 흐름에 따라 배치, 좌표속성 사용가능
+ablsolute 웹브라우저의 절대 좌표이용
+fixed 위치고정
+sticky 지정한 좌표의 임계점에 이르면 위치고정
+*/
+
+/* relative
+top: 위쪽을 기준으로 좌표 지정
+right: 오른쪽을 기준으로 좌표 지정
+bottom: 아래쪽을 기준으로 좌표 지정
+left: 왼쪽을 기준으로 좌표지정
+요소의 왼쪽 위 모서리가 기준점
+*/
+
+.green-box {
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+
+.green-box2 {
+    background-color: green;
+}
+
+/* absolute
+웹 브라우저의 왼쪽 위 모서리가 기준점
+*/
+
+body{
+    margin: 0;
+}
+
+.green-box2 {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+/* fixed  */
+
+.blue-box {
+    /* position: fixed; */
+    left: 200px;
+}
+
+/* sticky */
+.box.red-box.box2 {
+    /* position: sticky; */
+    /* top: 100px; */
+}
+
+/* z-index  */
+
+.box.blue-box.box2 {
+    position: absolute;
+    left: 10px;;
+    top:10px;
+    z-index:15;
+}
+
+.box.red-box {
+    position:relative;
+    z-index: 16;
+}
+
+/* float으로 글에 이미지 끼워 넣기 */
+
+.float img {
+    float: right;
+    margin-left: 1rem;
+}
+
+/* 블록요소를 인라인 요소처럼 배치하기 */
+
+.red-box3 {
+    color: white;
+    background-color: red;
+    float: left;
+}
+
+.blue-box3 {
+    color: white;
+    background-color: blue;
+    float: left;
+}
+

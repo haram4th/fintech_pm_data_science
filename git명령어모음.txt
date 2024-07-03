@@ -1,19 +1,36 @@
 저장소 초기화 하기
 git init -b main
 
-저장소 상태보기
-git status
-
 git remote하기: git remote add origin <레파지토리 주소>
 
 원격 저장소 목록: git remote -v
 
-git push
+저장소에 변경사항 추가하기 staging
+git add .
+git add <파일명>
 
-강제 푸쉬 git push --force
+저장소 상태보기
+git status
+
+git add 로 staging 한 파일 되돌리기, unstaging하기
+git reset HEAD <파일명>
+git restore --staged <파일명> 
+
+커밋하기
+git commit -m "커밋 메세지"
+
+원격 저장소에 업로드하기
+git push 
 
 git push시 upstream 오류 발생 경우
 git push -u origin main
+
+강제 푸쉬 git push --force
+
+git push시 git pull 나 git fetch를 하라고 뜰때
+git pull 을 먼저 한 후 git push
+
+---------------------------------------------------------------------------------------------
 
 브렌치 확인
 git branch -v
