@@ -56,8 +56,8 @@ body{
 .green-box2 {
     position: absolute;
     left: 100px;
-    top: 100px;
-}
+    top: 0px;
+} 
 
 /* fixed  */
 
@@ -78,19 +78,19 @@ body{
     position: absolute;
     left: 10px;;
     top:10px;
-    z-index:15;
+    z-index:17;
 }
 
 .box.red-box {
     position:relative;
-    z-index: 16;
+    z-index: 18;
 }
 
 /* float으로 글에 이미지 끼워 넣기 */
 
 .float img {
-    float: right;
-    margin-left: 1rem;
+    float: left;
+    margin-right: 1rem;
 }
 
 /* 블록요소를 인라인 요소처럼 배치하기 */
@@ -105,5 +105,4 @@ body{
     color: white;
     background-color: blue;
     float: left;
-}
-
+} 

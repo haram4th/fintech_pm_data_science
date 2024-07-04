@@ -1,0 +1,86 @@
+div.transition .red_box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    text-align: center;
+    color: white;
+    line-height: 100px;
+}
+
+div.transition .red_box:hover {
+  background-color: blue;
+  transition-duration: 3s;
+  transition-delay: 1s;
+}
+
+/* transition-property: 속성값 */
+/* 
+none 전환 효과 속성을 지정하지 않음
+all 모든 속성을 전환 효과 대상으로 지정
+background-color, color, width
+*/
+
+/* transition-duration: 시간 1s, 500ms; 트랜지션이 완료되는 시간 설정 */
+/* transition-delay: 시간 1s, 500ms;  효과 작동 시간 지연 */
+
+/* transition-timing-fuction 전환 효과의 진행 속도를 지정 */
+/* linear: 처음 속도와 마지막 속도가 일정
+ease: 처음에는 속도가 빨라지다가 중간부터 점점 느려짐
+ease-in: 처음에는 속도가 느리지만 완료될 때까지 점점 빨라짐
+ease-out: 처음에는 속도가 빠르지만 완료될 때까지 점점 느려짐
+ease-in-out: 처음에는 속도가 느리지만 점점 빨라지다가 다시 점점 느려짐
+
+*/
+
+.container .bar {
+  width: 10px;
+  transition-property: width;
+  transition-duration: 5s;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  background-color: gray;
+  color: white;
+}
+
+.container:hover .bar {
+  width: 220px;
+}
+
+/* linear: 처음 속도와 마지막 속도가 일정 */
+.bar:nth-child(1) {
+  transition-timing-function: linear;
+}
+
+/* ease: 처음에는 속도가 빨라지다가 중간부터 점점 느려짐 */
+.bar:nth-child(2) {
+  transition-timing-function: ease;
+}
+
+/* ease-in: 처음에는 속도가 느리지만 완료될 때까지 점점 빨라짐 */
+.bar:nth-child(3) {
+  transition-timing-function: ease-in;
+}
+
+/* ease-out: 처음에는 속도가 빠르지만 완료될 때까지 점점 느려짐 */
+.bar:nth-child(4) {
+  transition-timing-function: ease-out;
+}
+
+/* ease-in-out: 처음에는 속도가 느리지만 점점 빨라지다가 다시 점점 느려짐 */
+.bar:nth-child(5) {
+  transition-timing-function: ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

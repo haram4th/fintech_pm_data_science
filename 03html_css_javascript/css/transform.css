@@ -1,0 +1,47 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+
+/* transform은 요소를 변형시키는 기능 */
+/* 이동, 확대, 축소, 기울이기 */
+
+/* 이동하기 transfor: translate(x축, y축) */
+
+div:hover {
+    /* transform: translate(100px, 200px); */
+    /* transform: translateX(100px); */
+    /* transform: translateY(200px); */
+}
+
+/* 확대 축소하기  scale(X, Y), scaleY, scaleX 
+배율 2 2배, 1보다 작은 소수점은 축소*/
+div:hover {
+    /* transform: scale(2); */
+    /* transform: scaleX(2); */
+    /* transform: scaleY(2); */
+    /* transform: scale(0.5); */
+}
+
+/* 기울이기 skew(xdeg, ydeg), skewX(deg), skewY(deg) */
+div:hover {
+    /* transform: skew(30deg, 30deg); */
+    /* transform: skewX(80deg); */
+    /* transform: skewY(-50deg); */
+}
+
+/* 회전하기 rotate(deg) */
+div:hover {
+    /* transform: translate(100px); */
+    transform: rotate(200deg);
+    /* transform-origin: x, y 
+    x: left, center, right
+    y: top, center, bottom
+    */
+    /* transform-origin: ; */
+    transform-origin: right bottom;
+}
