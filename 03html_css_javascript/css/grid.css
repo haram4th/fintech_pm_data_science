@@ -5,11 +5,11 @@
     grid-template-rows: 100px 100px 100px;
 
     /* repeat(개수, 크기) 크기가 같은 박스를 여러개 만들때 */
-    /* grid-template-columns: repeat(2,100px);
-    grid-template-rows: repeat(2, 100px); */
+    /* grid-template-columns: repeat(3,100px); */
+    /* grid-template-rows: repeat(3, 100px);  */
 
-    /* grid-template-columns: minmax(10px,100px) 100px;
-    grid-template-rows: minmax(10px, 50px) 50px; */
+    /* grid-template-columns: minmax(10px,100px) 100px; */
+    /* grid-template-rows: minmax(10px, 50px) 50px; */
 
     /* row-gap, column-gap */
     row-gap: 10px;
@@ -95,9 +95,9 @@
 
     /* grid-templete-areas로 공간에 이름을 붙여 나누기 */
     grid-template-areas: 
-    "sidebar header header"
+    "header header header"
     "sidebar content content"
-    "sidebar footer footer"
+    "footer footer footer"
     ;
 
 }
@@ -140,19 +140,21 @@
 
 .grid-item3:nth-child(1) {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 4;
 }
 .grid-item3:nth-child(2) {
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 .grid-item3:nth-child(3) {
     grid-row-start: 2;
-    grid-row-end: 4;
-}
-.grid-item3:nth-child(4) {
+    grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 4;
-    grid-row-start: 2;
+}
+.grid-item3:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
     grid-row-end: 4;
 }

@@ -30,7 +30,7 @@ div:hover {
 /* 기울이기 skew(xdeg, ydeg), skewX(deg), skewY(deg) */
 div:hover {
     /* transform: skew(30deg, 30deg); */
-    /* transform: skewX(80deg); */
+    /* transform: skewX(30deg); */
     /* transform: skewY(-50deg); */
 }
 

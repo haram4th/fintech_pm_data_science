@@ -1,16 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="test.js"></script>
-    <title>Document</title>
+    <!-- 외부 스크립트 링크 방법 -->
+    <!-- js확장자로 된 별도의 파일을 생성해서 작성하고 로딩 -->
+    <!-- 형식 1 <script src="스크립트경로 파일명"><script> : body 가장 아래-->
+    <!-- 형식 2 <script defer src="스크립트경로 파일명"><script> : head에 작성 -->
+    <!-- <script defer src="../js/test.js"></script> -->
+    <title>Javascript</title>
+
+
 </head>
-
-
 <body>
-    <hi id="title">hello world</hi>
+    <button onclick="popup()">팝업</button>
 
-    
+    <div class="box-1">
+        <p class="text">text-1</p>
+        <p class="text">text-2</p>
+    </div>
+    <div class="box-2">
+        <p class="text">text-3</p>
+        <p class="text">text-4</p>
+    </div>
+
+
+
+    <!-- <script>
+        document.write("내부 스크립트 방법");
+    </script> -->
+    <script src="../js/test.js"></script>
+    <!-- javascript 내부 스크립트 방법1 -->
+    <!-- body 영역에서 가장 아래부분에 script 태그 안에 정의 한다. -->
+    <!-- javascript는 html 문서를 조작하는 언어이기 때문에 
+     html과 css 로딩이 모두 끝난 후 요소를 찾아 조작하기 때문 -->
+
+
+
 </body>
 </html>
