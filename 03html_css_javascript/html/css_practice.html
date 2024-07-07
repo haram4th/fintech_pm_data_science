@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="index.css"> 링크를 통한 css연결 -->
+    <link rel="stylesheet" href="../css/css_practice.css"> 
+    <title>Document</title>
+    <!-- <style>
+        h1{
+            color:blue;
+        }
+        p {
+            color: red;
+            text-align: left;
+        }
+    </style> -->
+
+</head>
+<body>
+<h1>내부 스타일 시트</h1>
+<p>head 태그 안에 style 태그를 만들고 그 안에 css 스타일을 정의</p>
+
+<h1>인라인 스타일</h1>
+<p>태그 안에 style 속성을 이용해 css 스타일 적용하는 것</p>
+<p>우선순위가 가장 높음.</p>
+
+<h1 id="p_id2">외부 스타일 시트</h1>
+<p>외부에 별도의 css 파일을 만들고 head부분에 link 시키는 방법</p>
+
+<!-- CSS 선택자 -->
+
+<!-- 전체 선택자 -->
+<!-- 모든 요소를 다 선택 -->
+
+<!-- id 선택자 -->
+<h1 id="h1_id">id 선택자</h1>
+<p id="p_id">id 선택자는 #id명으로 지정</p>
+
+<!-- class 선택자 -->
+<h1 class="h1_class">class 선택자</h1>
+<p class="p_class">class 선택자는 .클래스명으로 선택</p>
+<p class="p_class2">클래스는 중첩해서 여러개를 같이 쓸 수 있다.</p>
+<p class="p_class p_class2 p_class3">다중 클래스를 선택할 때는 .으로 연결해서 선택한다.</p>
+
+<!-- 기본 속성 선택자 a태그  a[target="_black"] -->
+
+<p>
+    <a href="http:www.naver.com" target="_blank">네이버</a>
+</p>
+
+<h2 title="heading first">heading first</h2>
+<h2 title="heading-first">heading-first</h2>
+<h2 title="heading second">heading second</h2>
+<h2 title="heading third">heading third</h2>
+
+<p>
+    <a href="https://www.test.com">https://www.test.com</a><br>
+    <a href="http://www.test.com">http://www.test.com</a><br>
+    <a href="http://www.test.org">http://www.test.org</a><br>
+    <a href="http://www.test.co.kr">http://www.test.co.kr</a><br>
+
+</p>
+
+<div class="first_test">the first div</div>
+<div class="second">the second div</div>
+<div class="test">the third div</div>
+<div class="forth_test_ele">the forth div</div>
+
+<h1>자손 셀렉터 연습(할아버지-손자)</h1>
+<div class="grandpa">
+    <p>paragraph 1</p>
+    <p>paragraph 2</p>
+    <span>
+        <p>paragraph 3</p>
+        <span>
+            <p>paragraph 4</p>
+        </span>
+    </span>
+</div>
+<p>paragraph 4</p>
+
+<h1>자식 셀렉터 연습(부모-자식)</h1>
+<div class="parents">
+    <p>paragraph 1</p>
+    <p>paragraph 2</p>
+    <span>
+        <p>paragraph 3</p>
+    </span>
+</div>
+<p>paragraph 4</p>
+
+<div class="siblings1">
+    <h1>형제 셀렉터 연습(형제간1)</h1>
+    <h2>형제 인접 셀렉터</h2>
+    <div>a div element</div>
+    <ul>
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+    </ul>
+
+    <p>the first paragraph</p>
+    <ul>
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+    </ul>
+
+    <h2>another list</h2>
+    <ul>
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+    </ul>
+
+    <p>the first paragraph2</p>
+    <ul>
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+    </ul>
+
+
+</div>
+
+<div class="siblings2">
+    <h1>형제 셀렉터 연습(형제간2)</h1>
+    <h2>형제 일반 셀렉터</h2>
+
+    <div>a div element</div>
+    <ul>
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+    </ul>
+
+    <p>the first paragraph</p>
+    <ul>
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+    </ul>
+
+    <h2>another list</h2>
+    <ul>
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+    </ul>
+    <h3>another list2</h3>
+    <ul>
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+    </ul>
+</div>
+
+<h1>가상 클래스 셀렉터</h1>
+<a href="#">hover me</a><br><br>
+<input type="text" placeholder="focus me">
+
+<h1>구조 가상 클래스 셀렉터</h1>
+<h2>:first-child, :last-child</h2>
+
+<div class="structural">
+    <p>div.structural의 첫번째 문단</p>
+
+    <h1>홈페이지에 오신 것을 환영합니다.</h1>
+    <p>이 문단은 부모(div.structural)의 첫 번째 자식 문단이 아닙니다.
+        두번째 입니다.
+    </p>
+    <div>
+        <p>이것은 div의 첫번째 자식 문단 입니다.</p>
+            <div>
+                <p>이것은 div의 첫번째 자식 문단 입니다.</p>
+                <p>이것은 div의 두번째 자식 문단 입니다.</p>
+            </div>
+        <p>이것은 div의 두번째 자식 문단 입니다.</p>
+
+    </div>
+    <p>이 문단은 부모(div.structural)의 마지막 자식입니다.
+</div>
+
+<div class="nth_child">
+    <h1>nth_child 연습</h1>
+    <ol>
+        <li>espresso</li>
+        <li>americano</li>
+        <li>caffe latte</li>
+        <li>caffe mocha</li>
+        <li>caramel latte</li>
+        <li>cappuccino</li>
+    </ol>
+    <ul>
+        <li>espresso</li>
+        <li>americano</li>
+        <li>caffe latte</li>
+        <li>caffe mocha</li>
+        <li>caramel latte</li>
+        <li>cappuccino</li>
+    </ul>
+</div>
+
+<div class="of_type">
+    <h1>first-of-type, last-of-type, <br>nth-of-type 연습</h1>
+    <h1>this is a heading</h1>
+    <p>the first paragraph</p>
+    <p>the second paragraph</p>
+    <p>the third paragraph</p>
+    <p>the fourth paragraph</p>
+    <div>
+        <h1>this is a heading2</h1>
+        <p>the first paragraph2</p>
+        <p>the second paragraph2</p>
+        <p>the third paragraph2</p>
+        <p>the fourth paragraph2</p>
+    </div>
+
+</div>
+
+<div class="validity">
+    <h1>정합성 체크 셀렉터 연습</h1>
+    <label>입력값이 반드시 필요
+        <input type="text" required>
+    </label>
+    <br>
+    <label>특수문자를 포함하지 않는 4자리 문자 또는 숫자
+        <input type="text" value="ab1"
+            pattern="[a-zA-Z0-9]{4}" required>
+    </label>
+    <br>
+    <label>핸드폰 번호 형식
+        <input type="text" value="010-1111-2222"
+            pattern="^\d{3}-\d{3,4}-\d{4}$" required>
+    </label>
+
+</div>
+
+<div class="pseudo_ele">
+    <h1>가상 요소 셀렉터 연습</h1>
+    <h2>this is a heading</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit unde, sapiente deleniti temporibus tenetur quod obcaecati hic, commodi fugit ex tempora mollitia maiores odit libero nihil! Reprehenderit illo libero quod!</p>
+</div>
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+</body>
+</html>
