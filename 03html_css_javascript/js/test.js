@@ -1,7 +1,7 @@
 // document.write("자바스크립트 외부 링크 테스트");
 
+// document.write("자바스크립트 외부 링크 테스트");
 /* document.write("자바스크립트 외부 링크 테스트");
-document.write("자바스크립트 외부 링크 테스트");
 document.write("자바스크립트 외부 링크 테스트"); */
 
 // 주석은 1줄 주석 //, 여러 줄 주석 /* */
@@ -14,14 +14,17 @@ document.write("자바스크립트 외부 링크 테스트"); */
 
 // let: 같은 이름의 변수를 생성 X
 
-let num; //num이라는 이름의 변수 선언 빈박스 만듬.
-num = 10; //num 이라는 박스에 10이라는 자료를 넣음. 자료 할당
-         //  = 는 오른쪽에 있는 자료를 왼쪽에 넣는다(할당한다)는 뜻.
+// let num; //num이라는 이름의 변수 선언 빈박스 만듬.
+// num = 10; //num 이라는 박스에 10이라는 자료를 넣음. 자료 할당
+//          //  = 는 오른쪽에 있는 자료를 왼쪽에 넣는다(할당한다)는 뜻.
+// console.log(num);
 
-let num2 = 20; // 변수를 선언 함과 동시에 자료 할당
-num2 = 30;
-num = 50;
-
+// let num2 = 20; // 변수를 선언 함과 동시에 자료 할당
+// console.log("num2:", num2);
+// num2 = 30;
+// console.log("num2:", num2);
+// num = 50;
+// console.log("num:", num);
 // console.log(num);  // 웹브라우저의 개발자도구의 console에 출력
 // document.write(num + num2);  // 웹브라우저의 html 화면에 출력
 
@@ -29,14 +32,14 @@ num = 50;
          // 선언과 동시에 값을 할당
 
 // const num3;  // 선언만 했기 때문에 오류
-const num3 = 30;
+// const num3 = 30;
 // document.write(num3)
 
 // num3 = 40; // const 변수에 재할당을 하려고 해서 에러
 
-let num4 = 50;
-const num5 = 100;
-let result = num4 * num5;
+// const num5 = 2;
+// let num4 = 1;
+// let result = num4 * num5;
 // document.write(result);
 
 // 자료형
@@ -46,9 +49,9 @@ let result = num4 * num5;
 
 // 숫자형
 num = 10; //정수형
-num2 = 3.14 // 실수형
-num4 = 3;
-let num6 = 2;
+// num2 = 3.14 // 실수형
+// num4 = 3;
+// let num6 = 2;
 // console.log(num*num2);    // 정수 * 실수 = 실수
 // console.log(num / num2);  // 정수 / 실수 = 실수
 // console.log(num / num4);  // 정수 / 정수 = 소숫점이 있어 실수
@@ -71,7 +74,7 @@ let string2 = 'javascript';
 // let string3 = `템플릿 문자열은 큰 따옴표(")나 작은 따옴표(')가 아닌 백틱으로(\`)문자열을 만듭니다.`;
 // console.log(string3);
 // let string4 = `템플릿 문자열은 \$\{\}을 이용해서 변수의 내용을 바로 출력 가능
-//               num : ${num}`;
+// //               num : ${string2}`;
 // console.log(string4);
 // console.log(`num + num2 = ${num+num2}`);
 
@@ -96,7 +99,7 @@ let arrayValues = [80, 3.14, "배열", [1,'신기해', [1,2,3],{배열:'array'}]
 // console.log(studentScore[0]); 
 // console.log(arrayValues[2]); 
 // arrayValues에서 신기해를 출력해 보세요.
-// console.log(arrayValues[3][2]); 
+// console.log(arrayValues[3][2][1]); 
 
 //객체 리터럴 JSON
 // {key : value}
@@ -150,9 +153,10 @@ let a = 1;
 let b = 1;
 // console.log("a+b: ", a+b);
 // console.log("a++ + b++: ", a++ + b++);  // ++ 1증가  -- 1감소
+// console.log("a:", a ,"b:", b)
 // ++a는 a를 먼저 1 증가 후 +연산
 // a++는 먼저 더하기 후 1 증가시켜 내보냄
-// console.log("a++ + b++: ", a, "+", b, ": ", ++a + b++);
+// console.log("++a + b++: ", a, "+", b, ": ", ++a + b++);
 // console.log(a, "+", b, ": ", a + b);
 // console.log(a, "+", b, ": ", a + b);
 
@@ -169,8 +173,8 @@ let b = 1;
 //  console.log(1 == "1" && "10" === 10);
 
 //  삼항 연산자 x? y : z  x냐? 참 y, 거짓 z
-let score = 89;
-let grade = score >= 90? 'A+' : 'B';
+// let score = 89;
+// let grade = score >= 90? 'A+' : 'B';
 // console.log(grade);
 
 // 조건문 다루기 if else, else if
@@ -179,7 +183,7 @@ let grade = score >= 90? 'A+' : 'B';
    } else {
      거짓일 때 실행문 
    } */
-// num = 9;
+// num = 10;
 // if (num % 2 === 0) {
 //     console.log("숫자는 짝수입니다.")
 // } else {
@@ -222,12 +226,12 @@ let grade = score >= 90? 'A+' : 'B';
 // for ... in 반복문 객체 리터럴(json)과 함께 사용
 // console.log(addressList);
 // for(let keyName in addressList){
-//     console.log(keyName, addressList[keyName]);
+//     console.log(addressList[keyName]);
 // }
-
+// console.log(addressList2['name'][2])
 // console.log(addressList2);
 // for(let keyName in addressList2){
-//     // console.log(keyName), addressList2[keyName];
+//     console.log(keyName, addressList2[keyName]);
 //     for(let index in addressList2[keyName]){
 //         console.log(keyName, addressList2[keyName][index]);
 //     }
@@ -272,7 +276,7 @@ let grade = score >= 90? 'A+' : 'B';
 //         console.log(`${num} * ${i} = ${num*i}`);
 //     }
 // }
-// gugudan(7);
+// gugudan(2);
 
 // 함수 표현식
 // const 변수명 = function 함수명() {
@@ -309,7 +313,7 @@ const calcSum = (num1, num2) => {
     return result;
 }
 let sumResult = calcSum(6, 3)
-// console.log(sumResult)
+console.log(sumResult)
 
 // 2개의 숫자를 입력해서 그 사이에 있는 숫자중에서 홀수인 수만 출력하고 리턴
 

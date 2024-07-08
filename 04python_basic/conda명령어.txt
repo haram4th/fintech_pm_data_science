@@ -1,0 +1,12 @@
+가상환경 만들기 
+conda create -n 가상환경명 python= 버전명
+가상환경 목록
+conda info --envs
+가상환경 활성화 하기
+conda activate 가상환경명
+설치된 패키지 리스트 보기
+conda list
+패키지 설치
+conda install 패키지명
+가상환경 삭제
+conda remove -n 가상환경명 --all
