@@ -1,0 +1,672 @@
+[
+    {
+        "ForNum": 44722,
+        "NatNum": 75991,
+        "addrCd": 1111,
+        "gungu": "종로구",
+        "resNm": "창덕궁",
+        "rnum": 1,
+        "sido": "서울특별시",
+        "yyyymm": "201112"
+    },
+    {
+        "ForNum": 0,
+        "NatNum": 11017,
+        "addrCd": 1111,
+        "gungu": "종로구",
+        "resNm": "운현궁",
+        "rnum": 2,
+        "sido": "서울특별시",
+        "yyyymm": "201112"
+    },
+    {
+        "ForNum": 132399,
+        "NatNum": 237330,
+        "addrCd": 1111,
+        "gungu": "종로구",
+        "resNm": "경복궁",
+        "rnum": 3,
+        "sido": "서울특별시",
+        "yyyymm": "201112"
+    },
+    {
+        "ForNum": 3133,
+        "NatNum": 21267,
+        "addrCd": 1111,
+        "gungu": "종로구",
+        "resNm": "창경궁",
+        "rnum": 4,
+        "sido": "서울특별시",
+        "yyyymm": "201112"
+    },
+    {
+        "ForNum": 18226,
+        "NatNum": 24223,
+        "addrCd": 1111,
+        "gungu": "종로구",
+        "resNm": "종묘",
+        "rnum": 5,
+        "sido": "서울특별시",
+        "yyyymm": "201112"
+    },
+    {
+        "ForNum": 0,
+        "NatNum": 233828,
+        "addrCd": 1117,
+        "gungu": "용산구",
+        "resNm": "국립중앙박물관",
+        "rnum": 6,
+        "sido": "서울특별시",
+        "yyyymm": "201112"
+    },
+    {
+        "ForNum": 0,
+        "NatNum": 93554,
+        "addrCd": 1111,
+        "gungu": "종로구",
+        "resNm": "서울역사박물관",
+        "rnum": 7,
+        "sido": "서울특별시",
+        "yyyymm": "201112"
+    },
+    {
+        "ForNum": 13935,
+        "NatNum": 52140,
+        "addrCd": 1114,
+        "gungu": "중구",
+        "resNm": "덕수궁",
+        "rnum": 8,
+        "sido": "서울특별시",
+        "yyyymm": "201112"
+    },
+    {
+        "ForNum": 0,
+        "NatNum": 61115,
+        "addrCd": 1114,
+        "gungu": "중구",
+        "resNm": "서울시립미술관 본관",
+        "rnum": 9,
+        "sido": "서울특별시",
+        "yyyymm": "201112"
+    },
+    {
+        "ForNum": 10,
+        "NatNum": 1885,
+        "addrCd": 1135,
+        "gungu": "노원구",
+        "resNm": "태릉 ·  강릉 · 조선왕릉전시관",
+        "rnum": 10,
+        "sido": "서울특별시",
+        "yyyymm": "201112"
+    },
+    {
+        "ForNum": 0,
+        "NatNum": 32412,
+        "addrCd": 1141,
+        "gungu": "서대문구",
+        "resNm": "서대문형무소역사관",
+        "rnum": 11,
+        "sido": "서울특별시",
+        "yyyymm": "201112"
+    },
+    {
+        "ForNum": 0,
+        "NatNum": 19308,
+        "addrCd": 1141,
+        "gungu": "서대문구",
+        "resNm": "서대문자연사박물관",
+        "rnum": 12,
+        "sido": "서울특별시",
+        "yyyymm": "201112"
+    },
+    {
+        "ForNum": 5214,
+        "NatNum": 6956,
+        "addrCd": 1144,
+        "gungu": "마포구",
+        "resNm": "트릭아이미술관",
+        "rnum": 13,
+        "sido": "서울특별시",
+        "yyyymm": "201112"
+    },
+    {
+        "ForNum": 333,
+        "NatNum": 1823,
+        "addrCd": 1165,
+        "gungu": "서초구",
+        "resNm": "헌릉ㆍ인릉",
+        "rnum": 14,
+        "sido": "서울특별시",
+        "yyyymm": "201112"
+    },
+    {
+        "ForNum": 4704,
+        "NatNum": 16634,
+        "addrCd": 1168,
+        "gungu": "강남구",
+        "resNm": "선릉·정릉",
+        "rnum": 15,
+        "sido": "서울특별시",
+        "yyyymm": "201112"
+    },
+    {
+        "ForNum": 52484,
+        "NatNum": 642290,
+        "addrCd": 1171,
+        "gungu": "송파구",
+        "resNm": "롯데월드",
+        "rnum": 16,
+        "sido": "서울특별시",
+        "yyyymm": "201112"
+    },
+    {
+        "ForNum": 27814,
+        "NatNum": 28061,
+        "addrCd": 1111,
+        "gungu": "종로구",
+        "resNm": "창덕궁",
+        "rnum": 1,
+        "sido": "서울특별시",
+        "yyyymm": "201212"
+    },
+    {
+        "ForNum": 546,
+        "NatNum": 5978,
+        "addrCd": 1111,
+        "gungu": "종로구",
+        "resNm": "운현궁",
+        "rnum": 2,
+        "sido": "서울특별시",
+        "yyyymm": "201212"
+    },
+    {
+        "ForNum": 105370,
+        "NatNum": 133012,
+        "addrCd": 1111,
+        "gungu": "종로구",
+        "resNm": "경복궁",
+        "rnum": 3,
+        "sido": "서울특별시",
+        "yyyymm": "201212"
+    },
+    {
+        "ForNum": 1451,
+        "NatNum": 15722,
+        "addrCd": 1111,
+        "gungu": "종로구",
+        "resNm": "창경궁",
+        "rnum": 4,
+        "sido": "서울특별시",
+        "yyyymm": "201212"
+    },
+    {
+        "ForNum": 8817,
+        "NatNum": 8068,
+        "addrCd": 1111,
+        "gungu": "종로구",
+        "resNm": "종묘",
+        "rnum": 5,
+        "sido": "서울특별시",
+        "yyyymm": "201212"
+    },
+    {
+        "ForNum": 13033,
+        "NatNum": 227077,
+        "addrCd": 1117,
+        "gungu": "용산구",
+        "resNm": "국립중앙박물관",
+        "rnum": 6,
+        "sido": "서울특별시",
+        "yyyymm": "201212"
+    },
+    {
+        "ForNum": 1138,
+        "NatNum": 78179,
+        "addrCd": 1111,
+        "gungu": "종로구",
+        "resNm": "서울역사박물관",
+        "rnum": 7,
+        "sido": "서울특별시",
+        "yyyymm": "201212"
+    },
+    {
+        "ForNum": 11151,
+        "NatNum": 44855,
+        "addrCd": 1114,
+        "gungu": "중구",
+        "resNm": "덕수궁",
+        "rnum": 8,
+        "sido": "서울특별시",
+        "yyyymm": "201212"
+    },
+    {
+        "ForNum": 0,
+        "NatNum": 213467,
+        "addrCd": 1114,
+        "gungu": "중구",
+        "resNm": "서울시립미술관 본관",
+        "rnum": 9,
+        "sido": "서울특별시",
+        "yyyymm": "201212"
+    },
+    {
+        "ForNum": 15,
+        "NatNum": 1252,
+        "addrCd": 1135,
+        "gungu": "노원구",
+        "resNm": "태릉 ·  강릉 · 조선왕릉전시관",
+        "rnum": 10,
+        "sido": "서울특별시",
+        "yyyymm": "201212"
+    },
+    {
+        "ForNum": 6625,
+        "NatNum": 14090,
+        "addrCd": 1141,
+        "gungu": "서대문구",
+        "resNm": "서대문형무소역사관",
+        "rnum": 11,
+        "sido": "서울특별시",
+        "yyyymm": "201212"
+    },
+    {
+        "ForNum": 0,
+        "NatNum": 18881,
+        "addrCd": 1141,
+        "gungu": "서대문구",
+        "resNm": "서대문자연사박물관",
+        "rnum": 12,
+        "sido": "서울특별시",
+        "yyyymm": "201212"
+    },
+    {
+        "ForNum": 24492,
+        "NatNum": 9167,
+        "addrCd": 1144,
+        "gungu": "마포구",
+        "resNm": "트릭아이미술관",
+        "rnum": 13,
+        "sido": "서울특별시",
+        "yyyymm": "201212"
+    },
+    {
+        "ForNum": 62,
+        "NatNum": 860,
+        "addrCd": 1165,
+        "gungu": "서초구",
+        "resNm": "헌릉ㆍ인릉",
+        "rnum": 14,
+        "sido": "서울특별시",
+        "yyyymm": "201212"
+    },
+    {
+        "ForNum": 66868,
+        "NatNum": 670056,
+        "addrCd": 1171,
+        "gungu": "송파구",
+        "resNm": "롯데월드",
+        "rnum": 15,
+        "sido": "서울특별시",
+        "yyyymm": "201212"
+    },
+    {
+        "ForNum": 25550,
+        "NatNum": 38553,
+        "addrCd": 1111,
+        "gungu": "종로구",
+        "resNm": "창덕궁",
+        "rnum": 1,
+        "sido": "서울특별시",
+        "yyyymm": "201312"
+    },
+    {
+        "ForNum": 101942,
+        "NatNum": 145544,
+        "addrCd": 1111,
+        "gungu": "종로구",
+        "resNm": "경복궁",
+        "rnum": 2,
+        "sido": "서울특별시",
+        "yyyymm": "201312"
+    },
+    {
+        "ForNum": 1986,
+        "NatNum": 20035,
+        "addrCd": 1111,
+        "gungu": "종로구",
+        "resNm": "창경궁",
+        "rnum": 3,
+        "sido": "서울특별시",
+        "yyyymm": "201312"
+    },
+    {
+        "ForNum": 6048,
+        "NatNum": 13896,
+        "addrCd": 1111,
+        "gungu": "종로구",
+        "resNm": "종묘",
+        "rnum": 4,
+        "sido": "서울특별시",
+        "yyyymm": "201312"
+    },
+    {
+        "ForNum": 9083,
+        "NatNum": 286992,
+        "addrCd": 1117,
+        "gungu": "용산구",
+        "resNm": "국립중앙박물관",
+        "rnum": 5,
+        "sido": "서울특별시",
+        "yyyymm": "201312"
+    },
+    {
+        "ForNum": 13282,
+        "NatNum": 99301,
+        "addrCd": 1114,
+        "gungu": "중구",
+        "resNm": "덕수궁",
+        "rnum": 6,
+        "sido": "서울특별시",
+        "yyyymm": "201312"
+    },
+    {
+        "ForNum": 6,
+        "NatNum": 706,
+        "addrCd": 1135,
+        "gungu": "노원구",
+        "resNm": "태릉 ·  강릉 · 조선왕릉전시관",
+        "rnum": 7,
+        "sido": "서울특별시",
+        "yyyymm": "201312"
+    },
+    {
+        "ForNum": 6732,
+        "NatNum": 14607,
+        "addrCd": 1141,
+        "gungu": "서대문구",
+        "resNm": "서대문형무소역사관",
+        "rnum": 8,
+        "sido": "서울특별시",
+        "yyyymm": "201312"
+    },
+    {
+        "ForNum": 0,
+        "NatNum": 23245,
+        "addrCd": 1141,
+        "gungu": "서대문구",
+        "resNm": "서대문자연사박물관",
+        "rnum": 9,
+        "sido": "서울특별시",
+        "yyyymm": "201312"
+    },
+    {
+        "ForNum": 43129,
+        "NatNum": 11886,
+        "addrCd": 1144,
+        "gungu": "마포구",
+        "resNm": "트릭아이미술관",
+        "rnum": 10,
+        "sido": "서울특별시",
+        "yyyymm": "201312"
+    },
+    {
+        "ForNum": 16,
+        "NatNum": 1248,
+        "addrCd": 1165,
+        "gungu": "서초구",
+        "resNm": "헌릉ㆍ인릉",
+        "rnum": 11,
+        "sido": "서울특별시",
+        "yyyymm": "201312"
+    },
+    {
+        "ForNum": 1445,
+        "NatNum": 11890,
+        "addrCd": 1168,
+        "gungu": "강남구",
+        "resNm": "선릉·정릉",
+        "rnum": 12,
+        "sido": "서울특별시",
+        "yyyymm": "201312"
+    },
+    {
+        "ForNum": 29928,
+        "NatNum": 41561,
+        "addrCd": 1111,
+        "gungu": "종로구",
+        "resNm": "창덕궁",
+        "rnum": 1,
+        "sido": "서울특별시",
+        "yyyymm": "201412"
+    },
+    {
+        "ForNum": 129946,
+        "NatNum": 190501,
+        "addrCd": 1111,
+        "gungu": "종로구",
+        "resNm": "경복궁",
+        "rnum": 2,
+        "sido": "서울특별시",
+        "yyyymm": "201412"
+    },
+    {
+        "ForNum": 1693,
+        "NatNum": 19473,
+        "addrCd": 1111,
+        "gungu": "종로구",
+        "resNm": "창경궁",
+        "rnum": 3,
+        "sido": "서울특별시",
+        "yyyymm": "201412"
+    },
+    {
+        "ForNum": 3891,
+        "NatNum": 5951,
+        "addrCd": 1111,
+        "gungu": "종로구",
+        "resNm": "종묘",
+        "rnum": 4,
+        "sido": "서울특별시",
+        "yyyymm": "201412"
+    },
+    {
+        "ForNum": 7195,
+        "NatNum": 258781,
+        "addrCd": 1117,
+        "gungu": "용산구",
+        "resNm": "국립중앙박물관",
+        "rnum": 5,
+        "sido": "서울특별시",
+        "yyyymm": "201412"
+    },
+    {
+        "ForNum": 14723,
+        "NatNum": 44272,
+        "addrCd": 1114,
+        "gungu": "중구",
+        "resNm": "덕수궁",
+        "rnum": 6,
+        "sido": "서울특별시",
+        "yyyymm": "201412"
+    },
+    {
+        "ForNum": 12,
+        "NatNum": 486,
+        "addrCd": 1135,
+        "gungu": "노원구",
+        "resNm": "태릉 ·  강릉 · 조선왕릉전시관",
+        "rnum": 7,
+        "sido": "서울특별시",
+        "yyyymm": "201412"
+    },
+    {
+        "ForNum": 6263,
+        "NatNum": 27205,
+        "addrCd": 1141,
+        "gungu": "서대문구",
+        "resNm": "서대문형무소역사관",
+        "rnum": 8,
+        "sido": "서울특별시",
+        "yyyymm": "201412"
+    },
+    {
+        "ForNum": 0,
+        "NatNum": 24527,
+        "addrCd": 1141,
+        "gungu": "서대문구",
+        "resNm": "서대문자연사박물관",
+        "rnum": 9,
+        "sido": "서울특별시",
+        "yyyymm": "201412"
+    },
+    {
+        "ForNum": 42443,
+        "NatNum": 7478,
+        "addrCd": 1144,
+        "gungu": "마포구",
+        "resNm": "트릭아이미술관",
+        "rnum": 10,
+        "sido": "서울특별시",
+        "yyyymm": "201412"
+    },
+    {
+        "ForNum": 5,
+        "NatNum": 1036,
+        "addrCd": 1165,
+        "gungu": "서초구",
+        "resNm": "헌릉ㆍ인릉",
+        "rnum": 11,
+        "sido": "서울특별시",
+        "yyyymm": "201412"
+    },
+    {
+        "ForNum": 823,
+        "NatNum": 8869,
+        "addrCd": 1168,
+        "gungu": "강남구",
+        "resNm": "선릉·정릉",
+        "rnum": 12,
+        "sido": "서울특별시",
+        "yyyymm": "201412"
+    },
+    {
+        "ForNum": 33342,
+        "NatNum": 59738,
+        "addrCd": 1111,
+        "gungu": "종로구",
+        "resNm": "창덕궁",
+        "rnum": 1,
+        "sido": "서울특별시",
+        "yyyymm": "201512"
+    },
+    {
+        "ForNum": 170379,
+        "NatNum": 148961,
+        "addrCd": 1111,
+        "gungu": "종로구",
+        "resNm": "경복궁",
+        "rnum": 2,
+        "sido": "서울특별시",
+        "yyyymm": "201512"
+    },
+    {
+        "ForNum": 1783,
+        "NatNum": 27172,
+        "addrCd": 1111,
+        "gungu": "종로구",
+        "resNm": "창경궁",
+        "rnum": 3,
+        "sido": "서울특별시",
+        "yyyymm": "201512"
+    },
+    {
+        "ForNum": 3406,
+        "NatNum": 14936,
+        "addrCd": 1111,
+        "gungu": "종로구",
+        "resNm": "종묘",
+        "rnum": 4,
+        "sido": "서울특별시",
+        "yyyymm": "201512"
+    },
+    {
+        "ForNum": 13127,
+        "NatNum": 281457,
+        "addrCd": 1117,
+        "gungu": "용산구",
+        "resNm": "국립중앙박물관",
+        "rnum": 5,
+        "sido": "서울특별시",
+        "yyyymm": "201512"
+    },
+    {
+        "ForNum": 15197,
+        "NatNum": 68749,
+        "addrCd": 1114,
+        "gungu": "중구",
+        "resNm": "덕수궁",
+        "rnum": 6,
+        "sido": "서울특별시",
+        "yyyymm": "201512"
+    },
+    {
+        "ForNum": 16,
+        "NatNum": 2221,
+        "addrCd": 1135,
+        "gungu": "노원구",
+        "resNm": "태릉 ·  강릉 · 조선왕릉전시관",
+        "rnum": 7,
+        "sido": "서울특별시",
+        "yyyymm": "201512"
+    },
+    {
+        "ForNum": 5588,
+        "NatNum": 44232,
+        "addrCd": 1141,
+        "gungu": "서대문구",
+        "resNm": "서대문형무소역사관",
+        "rnum": 8,
+        "sido": "서울특별시",
+        "yyyymm": "201512"
+    },
+    {
+        "ForNum": 0,
+        "NatNum": 22587,
+        "addrCd": 1141,
+        "gungu": "서대문구",
+        "resNm": "서대문자연사박물관",
+        "rnum": 9,
+        "sido": "서울특별시",
+        "yyyymm": "201512"
+    },
+    {
+        "ForNum": 29520,
+        "NatNum": 8822,
+        "addrCd": 1144,
+        "gungu": "마포구",
+        "resNm": "트릭아이미술관",
+        "rnum": 10,
+        "sido": "서울특별시",
+        "yyyymm": "201512"
+    },
+    {
+        "ForNum": 3,
+        "NatNum": 1647,
+        "addrCd": 1165,
+        "gungu": "서초구",
+        "resNm": "헌릉ㆍ인릉",
+        "rnum": 11,
+        "sido": "서울특별시",
+        "yyyymm": "201512"
+    },
+    {
+        "ForNum": 492,
+        "NatNum": 14454,
+        "addrCd": 1168,
+        "gungu": "강남구",
+        "resNm": "선릉·정릉",
+        "rnum": 12,
+        "sido": "서울특별시",
+        "yyyymm": "201512"
+    }
+]
