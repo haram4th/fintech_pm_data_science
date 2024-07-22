@@ -1,0 +1,104 @@
+.container{
+    display: grid;
+    border: 1px solid black;
+    width: 100%;
+
+    /* grid-template-areas로 공간에 이름을 붙여 나누기 */
+    grid-template-areas: 
+    "header header header"
+    "content content sidebar"
+    "footer footer footer";
+}
+
+div {
+    border: 1px solid black;
+}
+
+.grid-item2 {
+    color:white;
+    background-color: red;
+}
+
+.header {
+    grid-area: header;
+    width: 99vw; /* viewport의 넓이의 99% */
+    height: 10vh; /* viewport의 높이의 10% */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_item:first-child{
+    margin-right: 10%;
+    margin-left: 2%;
+}
+
+.header_item:last-child {
+    margin-left: 10%;
+    margin-right: 2%;
+}
+
+
+.sidebar{
+    grid-area: sidebar;
+    display: grid;
+    width: 24vw; /* viewport의 넓이의 24% */
+    height: 40vh; /* viewport의 높이의 40% */    
+}
+
+.sidebar_head {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: space-evenly;;
+    align-items: center;
+}
+
+.sidebar_body {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.sidebar_body2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.sidebar_body_item {
+    width: 70px;
+    text-align: center;
+
+}
+
+.content{
+    grid-area: content;
+    width: 75vw; /* viewport의 넓이의 75% */
+    height: 40vh; /* viewport의 높이의 40% */
+}
+
+.footer{
+    grid-area: footer;
+    width: 99vw; /* viewport의 넓이의 99% */
+    height: 10vh; /* viewport의 높이의 10% */
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+
