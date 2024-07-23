@@ -1,15 +1,15 @@
-import os
-import sys
-import urllib.request
-import json
+import requests
 import pandas as pd
 import time
 from dotenv import load_dotenv
+import os
+
+# .env 파일에서 환경 변수 로드
 load_dotenv()
 
-def naver_search():
+def naver_search2():
     """
-    이 함수는 naver 검색 api를 이용해서 블로그, 책, 뉴스, 전문자료를 검색하는 함수입니다.
+    네이버 검색 서비스를 Requests 를 사용해서 구현한 모듈입니다.
     """
     service = input('''검색 서비스 번호를 입력하세요:
     1 블로그
@@ -40,20 +40,15 @@ def naver_search():
     while True:
         client_id = os.getenv('client_id') # 네이버 api에 접속 가능한 id 
         client_secret = os.getenv('client_secret') # 네이버 api에 접속 가능한 pw 
-        encText = urllib.parse.quote(query)
-    #     print(encText)
-        url = f"https://openapi.naver.com/v1/search/{service}.json?query={encText}&display=10&start={start}&sort={sort}"
-    #     print("url:", url, end="\r")
+        url = f"https://openapi.naver.com/v1/search/{service}.json"
+        payload = dict(query=query, display=10, start=start, sort=sort)
+        headers = {"X-Naver-Client-Id" : client_id, "X-Naver-Client-Secret" : client_secret}
+
         try:
-            request = urllib.request.Request(url)
-            request.add_header("X-Naver-Client-Id",client_id)
-            request.add_header("X-Naver-Client-Secret",client_secret)
-            response = urllib.request.urlopen(request)
-            rescode = response.getcode()
-            if(rescode==200):
-                response_body = response.read()
-                data = json.loads(response_body.decode('utf-8'))
-                book_lists.append(json.loads(response_body.decode('utf-8')))
+            r = requests.get(url, params=payload, headers=headers)
+            if(r.status_code==200):
+                data = r.json()
+                book_lists.append(data)
                 total_page = data['total'] // 10 + 1
                 if total_page > 100:
                     total_page = 100
@@ -83,4 +78,3 @@ def naver_search():
         result = pd.concat([result, temp])
     result
     result.to_csv(f"naver_{service}_api_fintech_{query}_result.csv", encoding="utf-8")
-    
