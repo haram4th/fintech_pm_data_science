@@ -3,9 +3,13 @@ import pandas as pd
 import time
 from dotenv import load_dotenv
 import os
+from datetime import date
 
 # .env 파일에서 환경 변수 로드
 load_dotenv()
+
+today = date.today()
+print(today)
 
 def naver_search2():
     """
@@ -77,4 +81,9 @@ def naver_search2():
         temp = pd.json_normalize(book_list['items'])
         result = pd.concat([result, temp])
     result
-    result.to_csv(f"naver_{service}_api_fintech_{query}_result.csv", encoding="utf-8")
+    result.to_csv(f"naver_{service}_api_fintech_{query}_{today}_result.csv", encoding="utf-8")
+    
+    
+if __name__ == "__main__":
+    naver_search2()
+    # pass
