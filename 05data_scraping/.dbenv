@@ -1,6 +1,0 @@
-db = "mysql"
-dbtype = "pymysql"
-user = "mdai_haram"
-pw = "19Wkd^^Ehfs78"
-host = "59.7.246.88:3306"
-database = korea_stock_info
