@@ -83,4 +83,8 @@ def naver_search():
         result = pd.concat([result, temp])
     result
     result.to_csv(f"naver_{service}_api_fintech_{query}_result.csv", encoding="utf-8")
-    
+
+
+
+if __name__ == '__main__':
+    pass

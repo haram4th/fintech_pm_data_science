@@ -18,7 +18,7 @@ def str2int(x):
 
 # DB 연결
 def create_conn():
-    engine = create_engine("mysql+pymysql://mdai_haram:19Wkd^^Ehfs78@59.7.246.88:3306/korea_stock_info")
+    engine = create_engine("")
     conn = engine.connect()
     return engine, conn
 
