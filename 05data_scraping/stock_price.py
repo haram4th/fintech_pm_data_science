@@ -3,19 +3,23 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup as bs
 from datetime import date
-from dbenv import db, dbtype, id, pw, host, database
+from dotenv import load_dotenv
 from sqlalchemy import create_engine, text
 import pymysql
 import time
+# from PyInstaller.utils.hooks import collect_submodules
+# hiddenimports = collect_submodules('sqlalchemy')
+
 
 pymysql.install_as_MySQLdb()
+load_dotenv(dotenv_path=".env_db")
 
 def str2int(x):
     x = int(x.replace(",", ""))
     return x
 
 def db_connect():
-    engine = create_engine("%s+%s://%s:%s@%s/%s" % (db, dbtype, id, pw, host, database))
+    engine = create_engine("mysql+pymysql://root:1234@127.0.0.1:3306/korea_stock_info")
     conn = engine.connect()
     return conn
 

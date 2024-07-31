@@ -1,0 +1,33 @@
+pyinstaller -F stock_price.py
+
+7월 30일
+stock_price.exe 어제 만듬 => id, pw 공개된 채로 만듬
+=> 리버스엔지니어링 exe => py => id, pw, db정보 노출
++ github에 업로드시 id, pw 노출 보안상 문제 발생
+
+7월 31일 
+stock_price.py => stock_price_test2.py
+stock_price.exe를 새로 만들어야 하는데 
+이미 수집 한 데이터가 있어서 테스트 불가
+stock_price_test2.py를 만들고 소스코드 수정
+DB 저장 테이블도 test 테이블을 만들어서 테스트 실시
+stock_price_test2.py를 실행해서 문제가 없을 시
+stock_price_test2.exe를 만들어서 테스트
+stock_price_test2.exe에 문제가 없으면
+stock_price.py의 코드를 수정하고 
+stock_price.exe를 다시 만들고
+7월 30일에 만들었던 stock_price.exe를 교체
+
+git ci/cd
+컴1 코드 만들고 git에 upload
+컴2 git에 있는 코드를 clone, pull
+
+
+
+
+
+
+
+
+
+
