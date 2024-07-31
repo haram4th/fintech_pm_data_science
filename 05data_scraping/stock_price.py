@@ -3,23 +3,19 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup as bs
 from datetime import date
-from dotenv import load_dotenv
+from dbenv import db, dbtype, user, pw, host, database
 from sqlalchemy import create_engine, text
 import pymysql
 import time
-# from PyInstaller.utils.hooks import collect_submodules
-# hiddenimports = collect_submodules('sqlalchemy')
-
 
 pymysql.install_as_MySQLdb()
-load_dotenv(dotenv_path=".env_db")
 
 def str2int(x):
     x = int(x.replace(",", ""))
     return x
 
 def db_connect():
-    engine = create_engine("mysql+pymysql://root:1234@127.0.0.1:3306/korea_stock_info")
+    engine = create_engine("%s+%s://%s:%s@%s/%s" % (db, dbtype, user, pw, host, database))
     conn = engine.connect()
     return conn
 
@@ -27,7 +23,7 @@ def db_connect():
 def stock_info_to_db(idx, code, df):
     today = str(date.today()).replace("-","_")
     conn = db_connect()
-    df.to_sql(f"{today[:7]}_stock_price_info", con=conn, if_exists='append', index=False) # today[:7]
+    df.to_sql(f"{today[:7]}_stock_price_info_test", con=conn, if_exists='append', index=False) # today[:7]
     conn.close()
     
     return print(f"{today}, {idx}, {code}, {'저장완료':<30s}", end="\r")
