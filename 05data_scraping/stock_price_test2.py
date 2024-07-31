@@ -23,7 +23,7 @@ def db_connect():
 def stock_info_to_db(idx, code, df):
     today = str(date.today()).replace("-","_")
     conn = db_connect()
-    df.to_sql(f"{today[:7]}_stock_price_info", con=conn, if_exists='append', index=False) # today[:7]
+    df.to_sql(f"{today[:7]}_stock_price_info_test", con=conn, if_exists='append', index=False) # today[:7]
     conn.close()
     
     return print(f"{today}, {idx}, {code}, {'저장완료':<30s}", end="\r")
