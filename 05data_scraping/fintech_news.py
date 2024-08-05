@@ -36,4 +36,4 @@ for item in data['items']:
         break
 
 df = pd.DataFrame(result)
-dbio.news_to_db("fintech_news_test", str(today), df)
+dbio.news_to_db("fintech_news", str(today), df)
