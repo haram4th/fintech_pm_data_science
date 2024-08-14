@@ -6,5 +6,5 @@ __pycache__
 build
 dist
 dbenv.py
-
+*.tsv
 *.exe
