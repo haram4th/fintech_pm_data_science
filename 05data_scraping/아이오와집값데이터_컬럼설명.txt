@@ -1,0 +1,79 @@
+MSSubClass : 매매와 관련된 주거 타입 식별
+MSZoning : 매매의 일반적인 지역 분류
+LotFrontage : 부동산과 연결된 도로의 선형 피트
+LotArea : 평방피트 단위의 부지 크기
+Street : 부동산으로의 도로(street) 접근 유형
+Alley : 부동산으로의 골목(alley) 접근 유형
+LotShape : 부동산의 일반적인 모양
+LandContour : 부동산의 평탄도
+Utilities : 사용 가능한 유틸리티(수도전기가스) 유형
+LotConfig : 지역 구성
+LandSlope : 부동산의 경사
+Neighborhood : 에임스 시 경계 내의 물리적인 위치
+Condition1 : 주요 도로 및 철도와의 근접성
+Condition2 : 주요 도로 및 철도와의 근접성 (두 개 이상 존재하는 경우)
+BldgType : 주거 유형
+HouseStyle : 주거 스타일
+OverallQual : 전체적인 재료 및 마감 등급
+OverallCond : 집의 전체적인 상태 등급
+YearBuilt : 원래 공사일
+YearRemodAdd : 리모델링 날짜 (리모델링 혹은 추가가 없었던 경우 공사일과 동일)
+RoofStyle : 지붕 유형
+RoofMatl : 지붕 재료
+Exterior 1st : 주택 외장재
+Exterior 2nd : 주택 외장재 (두 개 이상 존재하는 경우)
+MasVnrType : 벽돌 베니어 유형
+MasVnrArea : 벽돌 베니어 면적 (평방피트)
+ExterQual : 외장재 품질
+ExterCond : 외장재 현재 상태
+Foundation : 토대 유형
+BsmtQual : 지하의 높이 평가
+BsmtCond : 지하실 일반적인 상태 평가
+BsmtExposure : 워크아웃 혹은 정원 수준의 벽
+BsmtFinType1 : 지하 마감면의 품질
+BsmtSF1 : 유형 1 마감 평방피트
+BsmtFinType2 : 지하 마감면의 품질 (있는 경우)
+BsmtSF2 : 유형 2 마감 평방피트
+BsmtUnfSF : 마감되지 않은 지하실 면적
+TotalBsmtSF : 지하 총 평방피트
+Heating : 난방 유형
+HeatingQC : 난방 품질 및 상태
+CentralAir : 중앙 에어컨 여부
+Electrial : 전기 시스템
+1stFlrSF : 1층 평방피트
+2ndFlrSF : 2층 평방피트
+LowQualFinSF : 저품질 마감 평방 피트 (모든 층)
+GrLivArea : 지상 거실 면적 평방 피트
+BsmtFullBath : 지하 전체 욕실
+BsmtHalfBath : 지하 반 욕실
+FullBath : 지하층 위의 전체 욕실
+HalfBath : 지하층 위의 반 욕실
+Bedroom : 지하층 위의 침실 수 (지하 침실은 포함하지 않음)
+Kitchen : 지하층 위의 주방 수
+KitchenQual : 주방 품질
+TotRmsAbvGra : 지하층 위의 모든 방 (욕실 제외)
+Functional : 집 기능 (공제가 보장되지 않는 한 일반적인 경우 가정)
+FirePlace : 벽난로 수
+FireplaceQu : 벽난로 품질
+GarageType : 차고 위치
+GarageYrBlt : 차고 건설 연도
+GarageFinish : 차고 내부 마감
+GarageCars : 차량 수용 가능 차고 크기
+GarageArea : 차고 평방피트
+GarageQual : 차고 품질
+GarageCond : 차고 상태
+PavedDrive : 포장된 진입로
+WoodDeckSF : 평방피트 단위의 목재 데크 면적
+OpenPochSF : 평방피트 단위의 개방 현관 면적
+EnclosedPorch : 평방피트 단위의 닫힌 현관 면적
+3SnPorch : 평방 피트의 세 계절 현관 면적
+ScreenPorch : 평방피트 단위의 스크린 현관 면적
+PoolArea : 평방피트 단위의 수영장 면적
+PoolQC : 수영장 품질
+Fence : 울타리 품질
+MiscFeature : 다른 항목에서 다루지 않는 기타 특징
+MiscVal : 기타 특징의 가치
+MoSold : 월 판매
+YrSold : 연 판매
+SaleType : 판매 유형
+SaleCondition : 판매 상태
