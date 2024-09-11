@@ -1,0 +1,387 @@
+## 아이오와 주택 데이터 설명
+
+### 1. **기본 정보**
+* Id: 고유 식별자 (각 주택의 고유 번호)
+* MSSubClass: 주택 유형
+  * 20: 1층 1946 이후 건축
+  * 30: 1층 1945 이전 건축
+  * 40: 1층 마감되지 않은 모든 연도
+  * 45: 1.5층 마감되지 않은 모든 연도
+  * 50: 1.5층 마감된 모든 연도
+  * 60: 2층 1946 이후 건축
+  * 70: 2층 1945 이전 건축
+  * 75: 2.5층 모든 연도
+  * 80: 스플릿 또는 멀티레벨
+  * 85: 스플릿 포이어
+  * 90: 듀플렉스 - 모든 스타일과 연도
+  * 120: 1층 PUD (계획 단위 개발) - 1946 이후 건축
+  * 150: 1.5층 PUD - 모든 연도
+  * 160: 2층 PUD - 1946 이후 건축
+  * 180: PUD - 멀티레벨 - 인클라인
+  * 190: 2층 PUD - 1945 이전 건축
+* MSZoning: 주택 구역
+  * RL: 주거용 저밀도
+  * RM: 주거용 중밀도
+  * C (all): 상업용
+  * FV: 주거용 고밀도
+  * RH: 주거용 고밀도
+* LotFrontage: 거리와 접한 면적 (피트 단위)
+* LotArea: 부지 면적 (평방 피트)
+* Street: 도로 유형
+  * Pave: 포장도로
+  * Grvl: 자갈도로
+  * Alley: 골목 접근 유형
+  * Grvl: 자갈
+  * Pave: 포장
+  * NA: 없음
+* LotShape: 부지 형태
+* Reg: 정규형
+  * IR1: 약간 불규칙형
+  * IR2: 중간 불규칙형
+  * IR3: 매우 불규칙형
+* LandContour: 토지 윤곽
+  * Lvl: 평지
+  * Bnk: 경사면
+  * HLS: 언덕
+  * Low: 저지대
+* Utilities: 유틸리티 유형
+  * AllPub: 모든 공공 서비스
+  * NoSewr: 하수도 없음
+  * NoSeWa: 하수도 및 물 없음
+  * ELO: 전기만
+* LotConfig: 부지 구성
+  * Inside: 내부
+  * Corner: 코너
+  * CulDSac: 막다른 길
+  * FR2: 2면 도로
+  * FR3: 3면 도로
+* LandSlope: 토지 경사도
+  * Gtl: 완만
+  * Mod: 보통
+  * Sev: 심함
+* Neighborhood: 인근 지역
+  * CollgCr: College Creek
+  * Veenker: Veenker
+  * Crawfor: Crawford
+  * NoRidge: North Ridge
+  * Mitchel: Mitchell
+  * Somerst: Somerset
+  * NWAmes: Northwest Ames
+  * OldTown: Old Town
+  * BrkSide: Brookside
+  * Sawyer: Sawyer
+  * NridgHt: Northridge Heights
+  * IDOTRR: Iowa DOT and Rail Road
+  * MeadowV: Meadow Village
+  * Edwards: Edwards
+  * Timber: Timberland
+  * Gilbert: Gilbert
+  * StoneBr: Stone Brook
+  * ClearCr: Clear Creek
+  * NPkVill: Northpark Villa
+  * Blueste: Bluestem
+  * SawyerW: Sawyer West
+  * Greens: Greens
+  * GrnHill: Green Hills
+  * Landmrk: Landmarks
+* Condition1: 주요 도로 또는 철도 근접도
+  * Norm: 정상
+  * Feedr: 피더 도로
+  * Artery: 주요 도로
+  * RRAe: 철도 인접 (동쪽)
+  * RRAn: 철도 인접 (북쪽)
+  * PosN: 양호 (북쪽)
+  * PosA: 양호 (동쪽)
+  * RRNe: 철도 인접 (북동쪽)
+  * RRnN: 철도 인접 (북쪽)
+* Condition2: 주요 도로 또는 철도 근접도
+  * Norm: 정상
+  * Feedr: 피더 도로
+  * Artery: 주요 도로
+  * RRAe: 철도 인접 (동쪽)
+  * RRAn: 철도 인접 (북쪽)
+  * PosN: 양호 (북쪽)
+  * PosA: 양호 (동쪽)
+  * RRNe: 철도 인접 (북동쪽)
+  * RRnN: 철도 인접 (북쪽)
+* BldgType: 건물 유형
+  * 1Fam: 단독 주택
+  * 2fmCon: 2가구 주택
+  * Duplex: 듀플렉스
+  * TwnhsE: 타운하우스 (끝)
+  * TwnhsI: 타운하우스 (내부)
+* HouseStyle: 주택 스타일
+  * 1Story: 1층
+  * 1.5Fin: 1.5층 마감
+  * 1.5Unf: 1.5층 미마감
+  * 2Story: 2층
+  * 2.5Fin: 2.5층 마감
+  * 2.5Unf: 2.5층 미마감
+  * SFoyer: 스플릿 포이어
+  * SLvl: 스플릿 레벨
+* OverallQual: 전체 재료 및 마감 품질 (1~10 등급)
+* OverallCond: 전체 상태 (1~10 등급)
+* YearBuilt: 건축 연도
+* YearRemodAdd: 리모델링 연도
+  * RoofStyle: 지붕 스타일
+  * Flat: 평지붕
+  * Gable: 박공
+  * Gambrel: 갬브렐
+  * Hip: 힙
+  * Mansard: 맨사드
+  * Shed: 셰드
+  * RoofMatl: 지붕 재료
+  * ClyTile: 점토 타일
+  * CompShg: 복합 아스팔트
+  * Membran: 멤브레인
+  * Metal: 금속
+  * Roll: 롤
+  * Tar&Grv: 타르 및 자갈
+  * WdShake: 목재 쉐이크
+  * WdShngl: 목재 싱글
+* Exterior1st: 외부 마감재 1
+  * AsbShng: 아스베스트 쉐이크
+  * AsphShn: 아스팔트 쉐이크
+  * BrkComm: 벽돌 커먼
+  * BrkFace: 벽돌 페이스
+  * CBlock: 콘크리트 블록
+  * CemntBd: 시멘트 보드
+  * HdBoard: 하드보드
+  * ImStucc: 인조 스터코
+  * MetalSd: 금속 사이딩
+  * Other: 기타
+  * Plywood: 합판
+  * PreCast: 프리캐스트
+  * Stone: 돌
+  * Stucco: 스터코
+  * VinylSd: 비닐 사이딩
+  * Wd Sdng: 목재 사이딩
+  * WdShing: 목재 쉐이크
+* Exterior2nd: 외부 마감재 2
+  * AsbShng: 아스베스트 쉐이크
+  * AsphShn: 아스팔트 쉐이크
+  * BrkComm: 벽돌 커먼
+  * BrkFace: 벽돌 페이스
+  * CBlock: 콘크리트 블록
+  * CemntBd: 시멘트 보드
+  * HdBoard: 하드보드
+  * ImStucc: 인조 스터코
+  * MetalSd: 금속 사이딩
+  * Other: 기타
+  * Plywood: 합판
+  * PreCast: 프리캐스트
+  * Stone: 돌
+  * Stucco: 스터코
+  * VinylSd: 비닐 사이딩
+  * Wd Sdng: 목재 사이딩
+  * WdShing: 목재 쉐이크
+* MasVnrType: 외장 벽 마감재 유형
+  * BrkCmn: 일반 벽돌
+  * BrkFace: 벽돌 페이스
+  * CBlock: 콘크리트 블록
+  * None: 없음
+  * Stone: 돌
+* MasVnrArea: 외장 벽 마감재 면적 (평방 피트)
+* ExterQual: 외부 품질
+  * Ex: 우수
+  * Gd: 좋음
+  * TA: 보통
+  * Fa: 나쁨
+  * Po: 매우 나쁨
+* Ex terCond: 외부 상태
+  * Ex: 우수
+  * Gd: 좋음
+  * TA: 보통
+  * Fa: 나쁨
+  * Po: 매우 나쁨
+* Foundation: 기초 유형
+  * BrkTil: 벽돌 타일
+  * CBlock: 콘크리트 블록
+  * PConc: 콘크리트
+  * Slab: 슬래브
+  * Stone: 돌
+  * Wood: 목재
+* BsmtQual: 지하실 품질
+  * Ex: 우수
+  * Gd: 좋음
+  * TA: 보통
+  * Fa: 나쁨
+  * Po: 매우 나쁨
+  * NA: 없음
+*BsmtCond: 지하실 상태
+  * Ex: 우수
+  * Gd: 좋음
+  * TA: 보통
+  * Fa: 나쁨
+  * Po: 매우 나쁨
+  * NA: 없음
+*Bs mtExposure: 지하실 노출 정도
+  * Gd: 좋음
+  * Av: 평균
+  * Mn: 최소
+  * No: 없음
+  * NA: 없음
+*BsmtFinType1: 지하실 마감 유형 1
+  * GLQ: 좋은 생활 공간
+  * ALQ: 평균 생활 공간
+  * BLQ: 저급 생활 공간
+  * Rec: 레크리에이션 공간
+  * LwQ: 저품질
+  * Unf: 미마감
+  * NA: 없음
+* BsmtFinSF1: 지하 마감 면적 1 (평방 피트)
+* BsmtFinType2: 지하실 마감 유형 2
+  * GLQ: 좋은 생활 공간
+  * ALQ: 평균 생활 공간
+  * BLQ: 저급 생활 공간
+  * Rec: 레크리에이션 공간
+  * LwQ: 저품질
+  * Unf: 미마감
+  * NA: 없음
+* BsmtFinSF2: 지하 마감 면적 2 (평방 피트)
+* BsmtUnfSF: 지하 미마감 면적 (평방 피트)
+* TotalBsmtSF: 지하 전체 면적 (평방 피트)
+* Heating: 난방 유형
+  * Floor: 바닥 난방
+  * GasA: 가스 에어
+  * GasW: 가스 물
+  * Grav: 중력
+  * OthW: 기타 물
+  * Wall: 벽 난방
+* HeatingQC: 난방 품질 및 상태
+  * Ex: 우수
+  * Gd: 좋음
+  * TA: 보통
+  * Fa: 나쁨
+  * Po: 매우 나쁨
+* CentralAir: 중앙 에어컨 여부
+  * Y: 있음
+  * N: 없음
+* Electrical: 전기 시스템
+  * SBrkr: 서킷 브레이커
+  * FuseA: 퓨즈 A
+  * FuseF: 퓨즈 F
+  * FuseP: 퓨즈 P
+  * Mix: 혼합
+* 1stFlrSF: 1층 면적 (평방 피트)
+* 2ndFlrSF: 2층 면적 (평방 피트)
+* LowQualFinSF: 저품질 마감 면적 (평방 피트)
+* GrLivArea: 지상 생활 면적 (평방 피트)
+* BsmtFullBath: 지하 전체 욕실 개수
+* BsmtHalfBath: 지하 반 욕실 개수
+* FullBath: 지상 전체 욕실 개수
+* HalfBath: 지상 반 욕실 개수
+* BedroomAbvGr: 지상 침실 개수
+* KitchenAbvGr: 지상 주방 개수
+* KitchenQual: 주방 품질
+  * Ex: 우수
+  * Gd: 좋음
+  * TA: 보통
+  * Fa: 나쁨
+  * Po: 매우 나쁨
+* TotRmsAbvGrd: 지상 총 방 개수 (욕실 제외)
+* Functional: 주택 기능성
+  * Typ: 일반
+  * Min1: 경미한 결함
+  * Min2: 경미한 결함 2
+  * Mod: 보통 결함
+  * Maj1: 주요 결함 1
+  * Maj2: 주요 결함 2
+  * Sev: 심각한 결함
+  * Sal: 판매 불가
+* Fireplaces: 벽난로 개수
+* FireplaceQu: 벽난로 품질
+  * Ex: 우수
+  * Gd: 좋음
+  * TA: 보통
+  * Fa: 나쁨
+  * Po: 매우 나쁨
+  * NA: 없음
+* GarageType: 차고 유형
+  * 2Types: 2가지 유형
+  * Attchd: 부착형
+  * Basment: 지하
+  * BuiltIn: 내장형
+  * CarPort: 카포트
+  * Detchd: 분리형
+  * NA: 없음
+* GarageYrBlt: 차고 건축 연도
+* GarageFinish: 차고 내부 마감 상태
+  * Fin: 마감
+  * RFn: 부분 마감
+  * Unf: 미마감
+  * NA: 없음
+* GarageCars: 차고에 주차 가능한 차량 수
+* GarageArea: 차고 면적 (평방 피트)
+* GarageQual: 차고 품질
+  * Ex: 우수
+  * Gd: 좋음
+  * TA: 보통
+  * Fa: 나쁨
+  * Po: 매우 나쁨
+  * NA: 없음
+* GarageCond: 차고 상태
+  * Ex: 우수
+  * Gd: 좋음
+  * TA: 보통
+  * Fa: 나쁨
+  * Po: 매우 나쁨
+  * NA: 없음
+* PavedDrive: 포장된 진입로 여부
+  * Y: 있음
+  * P: 부분
+  * N: 없음
+* WoodDeckSF: 목재 데크 면적 (평방 피트)
+* OpenPorchSF: 개방형 현관 면적 (평방 피트)
+* EnclosedPorch: 폐쇄형 현관 면적 (평방 피트)
+* 3SsnPorch: 3계절 현관 면적 (평방 피트)
+* ScreenPorch: 스크린 현관 면적 (평방 피트)
+* PoolArea: 수영장 면적 (평방 피트)
+* PoolQC: 수영장 품질
+  * Ex: 우수
+  * Gd: 좋음
+  * TA: 보통
+  * Fa: 나쁨
+  * NA: 없음
+* Fence: 울타리 품질
+  * GdPrv: 좋은 사생활
+  * MnPrv: 보통 사생활
+  * GdWo: 좋은 목재
+  * MnWw: 보통 목재
+  * NA: 없음
+* MiscFeature: 기타 기능
+  * Elev: 엘리베이터
+  * Gar2: 2차 차고
+  * Othr: 기타
+  * Shed: 창고
+  * TenC: 테니스 코트
+  * NA: 없음
+* MiscVal: 기타 기능의 가치 (달러)
+* MoSold: 판매 월
+* YrSold: 판매 연도
+* SaleType: 판매 유형
+  * WD: 보증 증서
+  * CWD: 보증 증서 및 특별 보증
+  * VWD: 보증 증서 및 특별 보증
+  * New: 신축
+  * COD: 현금 거래
+  * Con: 계약
+  * SaleType: 판매 유형
+  * WD: 보증 증서
+  * CWD: 보증 증서 및 특별 보증
+  * VWD: 보증 증서 및 특별 보증
+  * New: 신축
+  * COD: 현금 거래
+  * Con: 계약
+  * ConLw: 계약 저가
+  * ConLI: 계약 저가 (개인)
+  * ConLD: 계약 저가 (개발자)
+  * Oth: 기타
+* SaleCondition: 판매 조건
+  * Normal: 정상
+  * Abnorml: 비정상
+  * AdjLand: 인접 토지
+  * Alloca: 할당
+  * Family: 가족
+  * Partial: 부분
+* SalePrice: 판매 가격 (목표 변수)
