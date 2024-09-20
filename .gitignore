@@ -13,3 +13,4 @@ model
 .joblib
 *.jpg
 apartment_price_1999_2024.csv
+*.csv
