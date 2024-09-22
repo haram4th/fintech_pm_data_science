@@ -13,3 +13,5 @@ model
 .joblib
 *.jpg
 apartment_price_1999_2024.csv
+*.csv
+21서울시지하철_이용객_지도에_시각화하기.ipynb
