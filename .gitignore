@@ -14,3 +14,7 @@ model
 *.jpg
 apartment_price_1999_2024.csv
 *.csv
+*.safetensors
+*.wav
+*.tflite
+*env*
