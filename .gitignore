@@ -19,3 +19,7 @@ apartment_price_1999_2024.csv
 *.tflite
 *env*
 test_codes
+*.txt
+*.zip
+test
+test_codes
