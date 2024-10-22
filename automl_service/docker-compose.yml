@@ -1,0 +1,48 @@
+version: '3.8'
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  stock_analysis_service:
+    build: .
+    container_name: stock_analysis
+    volumes:
+      - ./stock_analysis_autogluon.py:/app/stock_analysis_autogluon.py
+      - ./stock_data_collector.py:/app/stock_data_collector.py
+      - ./scripts:/scripts
+    environment:
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_HOST=${DB_HOST}
+      - DB_PORT=${DB_PORT}
+      - DB_NAME=${DB_NAME}
+    depends_on:
+      - db
+    ports:
+      - "7860:7860"
+    command: >
+      sh -c "python /app/stock_data_collector.py && python /app/stock_analysis_autogluon.py"
+
+  cron_job:
+    image: python:3.10-slim
+    container_name: stock_data_collector
+    volumes:
+      - ./stock_data_collector.py:/app/stock_data_collector.py
+    environment:
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_HOST=${DB_HOST}
+      - DB_PORT=${DB_PORT}
+      - DB_NAME=${DB_NAME}
+    entrypoint: ["/bin/sh", "-c", "echo '0 19 * * * python /app/stock_data_collector.py' > /etc/crontabs/root && crond -f"]
+
+volumes:
+  db_data:

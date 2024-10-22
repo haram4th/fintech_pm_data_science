@@ -1,0 +1,9 @@
+
+services:
+  stock-analysis:
+    build: .
+    ports:
+      - "7860:7860"
+    volumes:
+      - .:/app
+    container_name: stock_analysis_app
