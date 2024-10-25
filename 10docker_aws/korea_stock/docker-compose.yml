@@ -1,0 +1,49 @@
+services:
+  stock-analysis:
+    build: .
+    ports:
+      - "7860:7860"
+    volumes:
+      - .:/app
+    container_name: korea_stock
+    environment:
+      - DB_HOST=db
+      - DB_PORT=36360  # MySQL 포트를 36360으로 설정
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=${DB_NAME}
+    depends_on:
+      - db
+    command: >
+      sh -c "
+      /usr/bin/wait-for-it.sh db:3306 --timeout=180 --strict -- &&
+      python korea_stock_company_info.py &&
+      python stock_estimation.py &&
+      cron -f
+      "
+
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "36360:3306"  # 외부 36360 포트를 MySQL 컨테이너의 3306 포트로 매핑
+    volumes:
+      - ./db_data:/var/lib/mysql
+
+  cronjobs:
+    build: .
+    container_name: stock_cronjobs
+    volumes:
+      - .:/app
+    depends_on:
+      - stock-analysis
+    command: >
+      sh -c "
+      /usr/bin/crontab /app/korea_stock_cron.sh &&
+      cron -f
+      "
